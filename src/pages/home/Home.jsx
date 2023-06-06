@@ -4,7 +4,7 @@ import "./Home.scss";
 const Home = () => {
     return (
         <div className="home">
-            <div className="container">
+            <div className="container featured">
                 <div className="left-section">
                     <div className="title">
                         <span>Find the right <i>freelance</i> service, right away</span>
@@ -26,6 +26,9 @@ const Home = () => {
                 <div className="right-section">
                     <img src="./images/man.png" alt="" />
                 </div>
+            </div>
+            <div className="container services">
+                <h2>Popular Services</h2>
             </div>
         </div>
     )

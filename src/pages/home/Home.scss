@@ -1,7 +1,7 @@
 .home {
     display: flex;
-    justify-content: center;
-    height: 596px;
+    flex-direction: column;
+    height: 600px;
     background: #01401b;
     padding: 20px 32px;
     padding-bottom: 0;
@@ -62,8 +62,8 @@
             }
         }
 
-        .right-section {
-
+        &.featured {
+            margin-bottom: 40px;
         }
     }
 }
