@@ -1,14 +1,16 @@
 .home {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    background: #01401b;
-    padding: 20px 32px;
-    padding-bottom: 0;
+    
 
     .container {
-       display: flex;
-       align-items: center;
+        display: flex;
+        align-items: center;
+        height: 596px;
+        background: #01401b;
+        padding: 20px 32px;
+        padding-bottom: 0;
+
 
         .left-section {
             display: flex;
@@ -65,5 +67,10 @@
         &.featured {
             margin-bottom: 40px;
         }
+    }
+
+    .services {
+        padding: 20px 32px;
+        margin-bottom: 90px;
     }
 }

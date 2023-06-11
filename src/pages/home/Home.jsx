@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.scss";
+import Carousel from "../../components/slider/Carousel";
+import { cards } from "../../resources/data";
+import Card from "../../components/card/Card";
 
 const Home = () => {
     return (
@@ -27,8 +30,11 @@ const Home = () => {
                     <img src="./images/man.png" alt="" />
                 </div>
             </div>
-            <div className="container services">
+            <div className="services">
                 <h2>Popular Services</h2>
+                <Carousel slidesToShow={5} arrowsScroll={5}>
+                    { cards.map(card => (<Card data={card} key={card.id}/>))}    
+                </Carousel>        
             </div>
         </div>
     )
